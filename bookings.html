@@ -1,35 +1,71 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <title>Tickethack - Bookings</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="bookings.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@700&family=Work+Sans:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<head>
-  <title>Tickethack - Bookings</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="bookings.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@700&family=Work+Sans:wght@300;400&display=swap"
-    rel="stylesheet">
-</head>
-
-<body>
-  <div id="header">
-    <h1><a id="title" href="index.html">Tickethack</a></h1>
-    <div>
-      <a class="link" href="cart.html">Cart</a> <a class="link" href="bookings.html">Bookings</a>
+  <body>
+    <div id="modal">
+      <i
+        aria-label="icon: desktop"
+        style="font-size: 80px; color: rgb(249, 74, 86)"
+        ><svg
+          viewBox="64 64 896 896"
+          focusable="false"
+          class=""
+          data-icon="desktop"
+          width="1em"
+          height="1em"
+          fill="currentColor"
+          aria-hidden="true"
+        >
+          <path
+            d="M928 140H96c-17.7 0-32 14.3-32 32v496c0 17.7 14.3 32 32 32h380v112H304c-8.8 0-16 7.2-16 16v48c0 4.4 3.6 8 8 8h432c4.4 0 8-3.6 8-8v-48c0-8.8-7.2-16-16-16H548V700h380c17.7 0 32-14.3 32-32V172c0-17.7-14.3-32-32-32zm-40 488H136V212h752v416z"
+          ></path></svg
+      ></i>
+      <p
+        style="
+          margin: 0;
+          margin-top: 1%;
+          font-size: 30px;
+          color: rgb(255, 255, 255);
+          font-weight: bold;
+          text-align: center;
+        "
+      >
+        Votre fenêtre est trop petite.
+      </p>
+      <p>
+        Elargissez votre fenêtre à plus de 850 pixels pour accéder aux
+        ressources.
+      </p>
     </div>
-  </div>
-
-  <div id="container">
-    <div id="trips">
-      <p>No booking yet.</p>
-      <p>Why not plan a trip?</p>
+    <div id="header">
+      <h1><a id="title" href="index.html">Tickethack</a></h1>
+      <div>
+        <a class="link" href="cart.html">Cart</a>
+        <a class="link" href="bookings.html">Bookings</a>
+      </div>
     </div>
 
-    <div id="trips2" style="display: none;"></div>
-  </div>
+    <div id="container">
+      <div id="trips">
+        <p>No booking yet.</p>
+        <p>Why not plan a trip?</p>
+      </div>
 
-  <script src="https://cdn.jsdelivr.net/npm/moment@2.29.3/moment.min.js"></script>
-  <script src="bookings.js"></script>
-</body>
+      <div id="trips2" style="display: none"></div>
+    </div>
 
+    <script src="https://cdn.jsdelivr.net/npm/moment@2.29.3/moment.min.js"></script>
+    <script src="bookings.js"></script>
+  </body>
 </html>

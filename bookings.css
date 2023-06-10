@@ -1,9 +1,30 @@
 body {
   margin: 0;
   height: 100vh;
-  font-family: 'Work Sans', sans-serif;
+  font-family: "Work Sans", sans-serif;
 }
-
+#modal {
+  display: none;
+}
+@media (max-width: 850px) {
+  #modal {
+    display: block;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: 10000;
+    opacity: 0.9;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    color: rgb(255, 255, 255);
+    text-align: center;
+  }
+}
 #header {
   display: flex;
   justify-content: space-between;
@@ -50,14 +71,14 @@ h4 {
 h5 {
   text-align: center;
   font-size: 14px;
-  color: #50A990;
+  color: #50a990;
   font-weight: 400;
   margin: 0;
 }
 
 #title {
-  font-family: 'Noto Sans KR', sans-serif;
-  color: #50A990;
+  font-family: "Noto Sans KR", sans-serif;
+  color: #50a990;
   text-decoration: none;
   font-size: 24px;
 }
@@ -88,7 +109,6 @@ h5 {
   overflow: scroll;
   padding: 20px;
   border-radius: 10px 10px 0px 0px;
-  ;
 }
 
 #trips2 {

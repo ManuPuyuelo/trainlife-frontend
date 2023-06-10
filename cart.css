@@ -1,9 +1,30 @@
 body {
   margin: 0;
   height: 100vh;
-  font-family: 'Work Sans', sans-serif;
+  font-family: "Work Sans", sans-serif;
 }
-
+#modal {
+  display: none;
+}
+@media (max-width: 850px) {
+  #modal {
+    display: block;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: 10000;
+    opacity: 0.9;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    color: rgb(255, 255, 255);
+    text-align: center;
+  }
+}
 #header {
   display: flex;
   justify-content: space-between;
@@ -48,8 +69,8 @@ h4 {
 }
 
 #title {
-  font-family: 'Noto Sans KR', sans-serif;
-  color: #50A990;
+  font-family: "Noto Sans KR", sans-serif;
+  color: #50a990;
   text-decoration: none;
   font-size: 24px;
 }
@@ -104,7 +125,7 @@ h4 {
   width: 30px;
   height: 30px;
   border: none;
-  background-color: #50A990;
+  background-color: #50a990;
   border-radius: 4px;
   color: white;
   font-size: 12px;
@@ -135,7 +156,7 @@ h4 {
   width: 90px;
   height: 30px;
   border: none;
-  background-color: #50A990;
+  background-color: #50a990;
   border-radius: 4px;
   color: white;
   font-size: 14px;
