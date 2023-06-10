@@ -1,7 +1,30 @@
 body {
   margin: 0;
   height: 100vh;
-  font-family: 'Work Sans', sans-serif;
+  font-family: "Work Sans", sans-serif;
+}
+
+#modal {
+  display: none;
+}
+@media (max-width: 850px) {
+  #modal {
+    display: block;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: 10000;
+    opacity: 0.9;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    color: rgb(255, 255, 255);
+    text-align: center;
+  }
 }
 
 #header {
@@ -22,7 +45,7 @@ body {
   color: white;
   width: 100%;
   height: 92vh;
-  background-image: url('images/background.jpg');
+  background-image: url("images/background.jpg");
   background-size: cover;
 }
 
@@ -49,8 +72,8 @@ span {
 }
 
 #title {
-  font-family: 'Noto Sans KR', sans-serif;
-  color: #50A990;
+  font-family: "Noto Sans KR", sans-serif;
+  color: #50a990;
   text-decoration: none;
   font-size: 24px;
 }
@@ -109,7 +132,7 @@ span {
   width: 88%;
   height: 40px;
   border: none;
-  background-color: #50A990;
+  background-color: #50a990;
   border-radius: 4px;
   color: white;
   font-size: 16px;
@@ -119,14 +142,14 @@ span {
 .input {
   width: 85%;
   height: 40px;
-  background-color: #F2F4F4;
+  background-color: #f2f4f4;
   color: #5b5b5b;
   border: none;
   border-radius: 4px;
   font-size: 16px;
   padding-left: 10px;
   padding-right: 10px;
-  font-family: 'Work Sans', sans-serif;
+  font-family: "Work Sans", sans-serif;
   font-weight: 400;
 }
 
@@ -151,7 +174,7 @@ span {
 }
 
 .green {
-  background-color: #50A990;
+  background-color: #50a990;
   height: 2px;
   width: 75%;
   margin-top: 40px;
@@ -175,7 +198,7 @@ span {
   width: 50px;
   height: 30px;
   border: none;
-  background-color: #50A990;
+  background-color: #50a990;
   border-radius: 4px;
   color: white;
   font-size: 12px;
@@ -193,6 +216,6 @@ span {
 
 ::-webkit-scrollbar-thumb {
   border-radius: 4px;
-  background-color: rgba(0, 0, 0, .5);
-  box-shadow: 0 0 1px rgba(255, 255, 255, .5);
+  background-color: rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 1px rgba(255, 255, 255, 0.5);
 }
